@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Ứng dụng NFC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ứng dụng NFC</h1>
+        <button class="nfc-action" id="readNFC">
+            <img src="nfc-icon.png" alt="NFC" class="nfc-icon">
+            Đọc thẻ NFC
+        </button>
+        <a href="https://mail.google.com/mail/mu/mp/834/#co" class="nfc-action" id="composeEmail">
+            <img src="nfc-icon.png" alt="NFC" class="nfc-icon">
+            Soạn thư nhanh
+        </a>
+        <a href="https://mail.google.com/mail/mu/mp/834/#tl/priority/%5Esmartlabel_personal" class="nfc-action" id="quickLogin">
+            <img src="nfc-icon.png" alt="NFC" class="nfc-icon">
+            Đăng nhập nhanh
+        </a>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalContent"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
